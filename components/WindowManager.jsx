@@ -264,8 +264,8 @@ export default function WindowManager() {
             </div>
             <div>
               <a
-                href={win.filePath || '/tech_Resume_exp_Prasun.pdf'}
-                download
+                href="/api/download-resume"
+                download="tech_Resume_exp_Prasun.pdf"
                 className="px-2 py-0.5 border border-[#808080] hover:bg-white bg-[#ece9d8] text-black font-semibold rounded-sm shadow-xs flex items-center gap-1 text-[11px] no-underline"
               >
                 💾 Download PDF
@@ -274,7 +274,7 @@ export default function WindowManager() {
           </div>
           <div className="flex-1 bg-[#525659]">
             <iframe
-              src={`${win.filePath || '/tech_Resume_exp_Prasun.pdf'}#toolbar=1&navpanes=0`}
+              src={`${win.filePath || '/tech_Resume_exp_Prasun.pdf'}#toolbar=0&navpanes=0`}
               className="w-full h-full border-none"
               title={win.title}
             />

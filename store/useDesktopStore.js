@@ -43,6 +43,7 @@ export const useDesktopStore = create((set, get) => ({
         x: null,
         y: null,
         type: app.type || 'system',
+        filePath: app.filePath,
       };
 
       set({
