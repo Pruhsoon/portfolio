@@ -1,0 +1,166 @@
+@import "xp.css/dist/XP.css";
+@import "katex/dist/katex.min.css";
+@import "tailwindcss";
+
+:root {
+  --background: #3a6ea5; /* Classic Windows XP desktop background color solid fallback */
+  --foreground: #000000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Tahoma", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Tahoma", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  overflow: hidden;
+}
+
+/* Reset buttons and inputs from browser defaults if necessary, to cooperate with xp.css */
+button {
+  font-family: inherit;
+}
+
+/* Inactive Window State Styles */
+.window.inactive {
+  box-shadow: inset -1px -1px #5a77a9, inset 1px 1px #809fc8, inset -2px -2px #5a77a9, inset 2px 2px #93b3dc,
+              inset -3px -3px #6b89b8, inset 3px 3px #85a4cb !important;
+}
+
+.window.inactive .title-bar {
+  background: linear-gradient(
+    180deg,
+    #7eb4ea 0%,
+    #7b9ed8 8%,
+    #5e7fae 40%,
+    #688ab9 88%,
+    #6e90c1 93%,
+    #688ab8 95%,
+    #57739b 96%,
+    #57739b 100%
+  ) !important;
+  border-top-color: #809fc8 !important;
+  border-left-color: #809fc8 !important;
+  border-right-color: #5a77a9 !important;
+  text-shadow: 1px 1px #4e6585 !important;
+  color: #d8e4f5 !important;
+}
+
+.window.inactive .title-bar-controls button {
+  background-color: #7b9ed8 !important;
+  filter: grayscale(40%) brightness(1.1);
+}
+
+/* WordPad Document Markdown Styles */
+.wordpad-content {
+  font-family: "Tahoma", "Arial", sans-serif;
+  color: #000;
+  line-height: 1.5;
+  font-size: 13px;
+  background-color: #fff;
+  padding: 24px 32px;
+  min-height: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.wordpad-content h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+}
+
+.wordpad-content h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.wordpad-content h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+.wordpad-content p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.wordpad-content ul, .wordpad-content ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.wordpad-content li {
+  margin-bottom: 4px;
+}
+
+.wordpad-content code {
+  font-family: Consolas, Monaco, monospace;
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.wordpad-content pre {
+  font-family: Consolas, Monaco, monospace !important;
+  background-color: #f8f8f8 !important;
+  color: #333 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  padding: 12px !important;
+  margin: 12px 0 !important;
+  overflow-x: auto !important;
+}
+
+.wordpad-content pre code {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-size: 12px;
+}
+
+.wordpad-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+  font-size: 12px;
+}
+
+.wordpad-content th, .wordpad-content td {
+  border: 1px solid #a9a9a9;
+  padding: 6px 8px;
+  text-align: left;
+}
+
+.wordpad-content th {
+  background-color: #ece9d8;
+  font-weight: bold;
+}
+
+.wordpad-content tr:nth-child(even) {
+  background-color: #fbfbf9;
+}
+
+/* KaTeX custom style overrides */
+.wordpad-content .katex-display {
+  margin: 12px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+

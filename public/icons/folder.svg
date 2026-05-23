@@ -1,0 +1,29 @@
+<svg viewBox="0 0 48 48" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Folder Back Gradient -->
+    <linearGradient id="folder-back-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAA812" />
+      <stop offset="100%" stop-color="#AF7102" />
+    </linearGradient>
+    <!-- Folder Front Gradient -->
+    <linearGradient id="folder-front-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFDD75" />
+      <stop offset="20%" stop-color="#FCD24D" />
+      <stop offset="100%" stop-color="#DCA114" />
+    </linearGradient>
+  </defs>
+
+  <!-- Folder Back Flap and Tab -->
+  <path d="M 4,10 C 4,8.5 5.5,7 7,7 L 18,7 L 24,13 L 41,13 C 42.5,13 44,14.5 44,16 L 44,40 C 44,41.5 42.5,43 41,43 L 7,43 C 5.5,43 4,41.5 4,40 Z" fill="url(#folder-back-grad)" stroke="#925D02" stroke-width="1.5" stroke-linejoin="round" />
+
+  <!-- Sheet of Paper sticking out slightly (adds that premium detail!) -->
+  <path d="M 12,11 L 36,11 L 36,22 L 12,22 Z" fill="#ffffff" stroke="#a0a0a0" stroke-width="0.8" />
+  <line x1="16" y1="14" x2="32" y2="14" stroke="#d0d0d0" stroke-width="1" />
+  <line x1="16" y1="18" x2="28" y2="18" stroke="#d0d0d0" stroke-width="1" />
+
+  <!-- Folder Front Flap (with lower top to expose paper and 3D angle) -->
+  <path d="M 4,16 L 41,16 C 42.5,16 43.8,17.2 43.5,19 L 41,41 C 40.8,42.2 39.5,43 38,43 L 7,43 C 5.5,43 4.2,42 4,40.5 L 4,16 Z" fill="url(#folder-front-grad)" stroke="#925D02" stroke-width="1.5" stroke-linejoin="round" />
+  
+  <!-- Subtle highlight on the rim of the front flap -->
+  <path d="M 5,17 L 41,17" stroke="#FFE9A3" stroke-width="1" />
+</svg>

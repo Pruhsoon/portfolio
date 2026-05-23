@@ -1,0 +1,38 @@
+<svg viewBox="0 0 48 48" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Rim Gradient -->
+    <linearGradient id="rim-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E1E5F2" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#A2A9BD" />
+    </linearGradient>
+    <!-- Body Gradient -->
+    <linearGradient id="body-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BCD0F5" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3F72D3" stop-opacity="0.9" />
+    </linearGradient>
+    <!-- Green Arrows Gradient -->
+    <linearGradient id="arrow-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6AE629" />
+      <stop offset="100%" stop-color="#247805" />
+    </linearGradient>
+  </defs>
+
+  <!-- Recycle Bin Basket Body -->
+  <path d="M 10,12 L 38,12 L 33,42 C 33,44 32,45 30,45 L 18,45 C 16,45 15,44 15,42 Z" fill="url(#body-grad)" stroke="#2C4E94" stroke-width="1.5" stroke-linejoin="round" />
+  
+  <!-- Basket Rim (Top oval/bevel) -->
+  <ellipse cx="24" cy="12" rx="14" ry="4" fill="url(#rim-grad)" stroke="#2C4E94" stroke-width="1.5" />
+  <ellipse cx="24" cy="12" rx="11" ry="2.5" fill="#1C3875" opacity="0.3" />
+
+  <!-- Inner basket mesh details -->
+  <path d="M 15,16 L 19,44 M 20,16 L 22,44 M 24,16 L 25,44 M 28,16 L 27,44 M 33,16 L 29,44" stroke="#ffffff" stroke-width="0.8" stroke-linecap="round" opacity="0.4" />
+  
+  <!-- Recycle Green Arrows Symbol -->
+  <!-- Top Arrow -->
+  <path d="M 24,19 L 29,24 L 26,24 C 26,28 22,30 20,30 C 22,28 23,26 23,24 L 20,24 Z" fill="url(#arrow-grad)" stroke="#174E02" stroke-width="0.5" />
+  <!-- Bottom Right Arrow -->
+  <path d="M 31,31 L 26,34 L 28,32 C 25,35 21,34 19,33 C 22,33 24,31 25,29 L 23,30 Z" fill="url(#arrow-grad)" stroke="#174E02" stroke-width="0.5" transform="rotate(120, 24, 28)" />
+  <!-- Bottom Left Arrow -->
+  <path d="M 31,31 L 26,34 L 28,32 C 25,35 21,34 19,33 C 22,33 24,31 25,29 L 23,30 Z" fill="url(#arrow-grad)" stroke="#174E02" stroke-width="0.5" transform="rotate(240, 24, 28)" />
+</svg>
